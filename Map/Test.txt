@@ -1,0 +1,7 @@
+{
+	"#ed1c24" : "Rouge",
+	"#00a2e8" : "Bleue",
+	"#fff200" : "Jaune",
+	"#22b14c" : "Vert",
+	"#a349a4" : "Violet",
+}
