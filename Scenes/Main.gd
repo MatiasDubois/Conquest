@@ -8,6 +8,7 @@ func _ready():
 func _process(delta):
 	pass
 
+# Load provinces from provinces.txt
 func load_province():
 	var image = mapImage.get_texture().get_image()
 	var pixel_color_dict = get_pixel_color_dict(image)
@@ -48,6 +49,7 @@ func get_pixel_color_dict(image):
 	return pixel_color_dict
 
 
+# Generate a Polygons on the correct pixel
 func get_polygons(image, province_color, pixel_color_dict):
 	var targetImage = Image.create(image.get_size().x,image.get_size().y, false, Image.FORMAT_RGBA8)
 	for value in pixel_color_dict[province_color]:
